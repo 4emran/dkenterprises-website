@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DK Enterprises — Model 2 Demo</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,sans-serif;background:#f5f6f8;color:#17202a}
+header{height:72px;background:#101820;color:white;display:flex;align-items:center;justify-content:space-between;padding:0 6%;position:sticky;top:0;z-index:5}
+.logo{font-size:22px;font-weight:800;letter-spacing:.5px}.logo span{color:#d7b56d}
+nav a{color:#dfe5ea;text-decoration:none;margin-left:28px;font-size:14px}
+.hero{background:#101820;color:white;padding:90px 6% 110px;display:grid;grid-template-columns:1.2fr .8fr;gap:50px}
+.eyebrow{color:#d7b56d;font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:12px}
+h1{font-size:58px;line-height:1.03;margin:16px 0}.hero p{font-size:18px;line-height:1.7;color:#cbd3da;max-width:620px}
+.btn{display:inline-block;margin-top:22px;padding:14px 22px;border-radius:8px;text-decoration:none;font-weight:700}.primary{background:#d7b56d;color:#101820}.ghost{border:1px solid #5d6871;color:white;margin-left:10px}
+.panel{background:#19232c;border:1px solid #34414c;border-radius:18px;padding:25px;align-self:center;box-shadow:0 20px 50px #0004}
+.panel h3{margin-top:0}.metric{display:flex;justify-content:space-between;border-top:1px solid #34414c;padding:15px 0;color:#cbd3da}.metric b{color:white}
+section{padding:75px 6%}.section-title{max-width:700px;margin-bottom:35px}.section-title h2{font-size:36px;margin:8px 0}.muted{color:#65727d;line-height:1.7}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:white;border:1px solid #e1e5e8;border-radius:14px;padding:25px;min-height:180px}.card h3{margin-top:0}
+.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.step{background:#101820;color:white;padding:20px;border-radius:12px;text-align:center;font-weight:700}.step small{display:block;color:#aeb8c0;margin-top:7px;font-weight:400}
+.portal{background:#e9edf0}.portal-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.portal-card{background:#101820;color:white;border-radius:16px;padding:30px}.portal-card li{margin:12px 0;color:#d3dbe1}
+footer{background:#101820;color:#aeb8c0;padding:35px 6%;display:flex;justify-content:space-between}
+@media(max-width:800px){.hero,.portal-grid{grid-template-columns:1fr}.cards,.flow{grid-template-columns:1fr 1fr}h1{font-size:42px}nav{display:none}}
+</style>
+</head>
+<body>
+<header><div class="logo">DK<span>ENTERPRISES</span></div><nav><a href="#company">Company</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#portal">Client Portal</a><a href="#contact">Contact</a></nav></header>
+
+<section class="hero">
+<div><div class="eyebrow">Model 2 • Business + Digital</div><h1>Build better.<br>Operate smarter.</h1><p>DK Enterprises combines project execution, commercial discipline and a digital operating layer designed to keep every client, quotation, project and payment connected.</p><a class="btn primary" href="#portal">Enter Malta OS</a><a class="btn ghost" href="#contact">Start a Project</a></div>
+<div class="panel"><h3>Malta OS — Company Pulse</h3><div class="metric"><span>Active Projects</span><b>08</b></div><div class="metric"><span>Open Quotations</span><b>14</b></div><div class="metric"><span>Receivables</span><b>₹18.4L</b></div><div class="metric"><span>On-track Projects</span><b>92%</b></div></div>
+</section>
+
+<section id="company"><div class="section-title"><div class="eyebrow">What DK does</div><h2>One company. One operating flow.</h2><p class="muted">The public website is the front door. Malta OS is the operating engine behind it.</p></div>
+<div class="cards">
+<div class="card"><h3>Projects & Interiors</h3><p class="muted">Execution, interiors, finishing and coordinated project delivery.</p></div>
+<div class="card"><h3>Project Management</h3><p class="muted">Planning, site coordination, progress, quality and completion.</p></div>
+<div class="card"><h3>Business Services</h3><p class="muted">Commercial support, estimation, procurement and operational coordination.</p></div>
+</div></section>
+
+<section id="projects"><div class="section-title"><div class="eyebrow">Business lifecycle</div><h2>From enquiry to completion.</h2></div>
+<div class="flow">
+<div class="step">Lead<small>Requirement</small></div><div class="step">Estimate<small>BOQ + Cost</small></div><div class="step">Quote<small>Margin + Offer</small></div><div class="step">Project<small>Execution</small></div><div class="step">Finance<small>Bill + Collect</small></div>
+</div></section>
+
+<section id="services" class="portal"><div class="section-title"><div class="eyebrow">Malta OS gateway</div><h2>The website connects to the business.</h2><p class="muted">Model 2 gives different users the right experience while keeping one source of truth underneath.</p></div>
+<div class="portal-grid">
+<div class="portal-card"><h3>Client Portal</h3><ul><li>Submit a requirement</li><li>View quotations</li><li>Approve / respond</li><li>Track project progress</li><li>Access documents & invoices</li></ul></div>
+<div class="portal-card"><h3>DK Team Portal</h3><ul><li>CRM & client pipeline</li><li>BOQ & estimation</li><li>Quotation management</li><li>Project & procurement control</li><li>Finance & profitability</li></ul></div>
+</div></section>
+
+<section id="portal"><div class="section-title"><div class="eyebrow">Prototype dashboard</div><h2>Welcome to Malta OS.</h2><p class="muted">This is the direction for the internal dashboard—not the final production UI.</p></div>
+<div class="cards">
+<div class="card"><h3>Commercial</h3><p class="muted">14 open quotations · ₹42.6L pipeline</p></div>
+<div class="card"><h3>Projects</h3><p class="muted">8 active · 1 needs attention</p></div>
+<div class="card"><h3>Finance</h3><p class="muted">₹18.4L receivable · 6 invoices due</p></div>
+</div></section>
+
+<section id="contact" style="background:white"><div class="section-title"><div class="eyebrow">Start with DK</div><h2>Tell us what you want to build.</h2><p class="muted">A future version of this form will create a Lead directly inside Malta OS.</p><a class="btn primary" href="mailto:hello@dkenterprises.com">Send an Enquiry</a></div></section>
+
+<footer><span>© 2026 DK Enterprises</span><span>Model 2 Demo • Public Web + Malta OS</span></footer>
+</body></html>
